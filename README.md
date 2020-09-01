@@ -1,7 +1,7 @@
 
 # Wolf User Bot
 
-![logo](https://telegra.ph/file/277e2767055da1a50bea9.jpg)
+![logo](https://telegra.ph/file/cd8233862a1c8ef44a620.jpg)
 
 
 [![Build Status](https://travis-ci.com/WolfGangIndia/WolfUserBot.svg?branch=sql-extended)](https://travis-ci.com/WolfGangIndia/WolfUserBot) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/38fee611df7c4312be63a15cad64a50a)](https://www.codacy.com/manual/WolfGangIndia/WolfUserBot?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=WolfGangIndia/WolfUserBot&amp;utm_campaign=Badge_Grade) ![Last Commit](https://img.shields.io/github/last-commit/WolfGangIndia/WolfUserBot) ![Contributers](https://img.shields.io/github/contributors/WolfGangIndia/WolfUserBot) ![Forks](https://img.shields.io/github/forks/WolfGangIndia/WolfUserBot)
