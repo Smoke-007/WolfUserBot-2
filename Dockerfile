@@ -1,7 +1,7 @@
-From WolfGangIndia/WolfUserbot
+From wolfgangindia/wolfuserbot
 
 #clonning repo
-#clonning repo RUN git clone https://github.com/wolfgangindia/wolfuserbot.git /root/userbot
+RUN git clone https://github.com/wolfgangindia/wolfuserbot.git /root/userbot
 #working directory
 WORKDIR /root/userbot
 
