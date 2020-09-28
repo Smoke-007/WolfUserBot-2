@@ -1,5 +1,5 @@
 
-# Wolf User Bot by Smoke
+# Smoke Personal bot
 
 ![logo](https://telegra.ph/file/cd8233862a1c8ef44a620.jpg)
 
