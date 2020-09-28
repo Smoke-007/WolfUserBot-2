@@ -1,4 +1,4 @@
-From wolfgangindia/userbot
+From wolfgangindia/wolfuserbot/userbot
 
 #clonning repo
 RUN git clone https://github.com/wolfgangindia/wolfuserbot.git /root/userbot
