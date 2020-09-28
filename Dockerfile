@@ -1,5 +1,11 @@
 From FROM python:3.8.5-slim-buster
 
+ENV PIP_NO_CACHE_DIR 1
+
+RUN sed -i.bak 's/us-west-2\.ec2\.//' /etc/apt/sources.list
+
+# Installing Required Packages
+
 RUN apt update && apt upgrade -y && \
     apt-get install --no-install-recommends -y \
     aria2\
@@ -63,7 +69,20 @@ RUN apt update && apt upgrade -y && \
     libopus-dev \
     xdg-utils \
     && rm -rf /var/lib/apt/lists /var/cache/apt/archives /tmp
-    
+
+
+    # Pypi package Repo upgrade
+RUN pip3 install --upgrade pip setuptools
+
+# install google chrome
+RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+RUN dpkg -i ./google-chrome-stable_current_amd64.deb
+
+#install chromedriver
+RUN mkdir /tmp/
+RUN wget -O /tmp/chromedriver.zip http://chromedriver.storage.googleapis.com/$(curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE)/chromedriver_linux64.zip 
+RUN unzip /tmp/chromedriver.zip chromedriver -d /usr/bin/ 
+
 #clonning repo
 RUN git clone https://github.com/wolfgangindia/wolfuserbot.git /root/userbot
 #working directory
